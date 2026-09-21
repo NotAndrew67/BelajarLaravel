@@ -21,3 +21,8 @@ Route::get('/layout', function () {
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 });
+
+Route::get('/admin/about', function () {
+    return view('admin.about');
+});
+
