@@ -1,6 +1,7 @@
 <x-admin.layout>
     <div class="mb-6">
-        <h1 class="text-2xl font-bold text-white">Dashboard - Muhammad Azzam Aulawy</h1>
+        <h1 class="text-2xl font-bold text-white">My Name Is Muhammad Azzam Aulawy</h1>
+        <h1 class="text-2xl font-bold text-white">A.K.A NotAndrew67</h1>
 
         <a href="https://github.com/NotAndrew67" target="_blank" rel="noopener noreferrer"
            class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">

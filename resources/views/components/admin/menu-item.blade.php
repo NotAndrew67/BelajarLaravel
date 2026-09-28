@@ -7,7 +7,7 @@
        {{-- mengatur tampilan saat menu aktif (diklik) atau tidak --}}
        @class([
            'flex items-center p-2 text-base font-medium rounded-lg group',
-           'bg-red-200 text-gray-900 dark:bg-red-700 dark:text-white' => $isActive,
+           'bg-red-blue text-gray-900 dark:bg-blue-700 dark:text-white' => $isActive,
            'text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700' => ! $isActive,
        ])>
         <svg aria-hidden="true"
