@@ -1,5 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AboutController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -16,13 +20,9 @@ Route::get('/layout', function () {
     return view('layout');
 });
 
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-});
+Route::get('/admin/dashboard', DashboardController::class . '@index')->name('admin.dashboard');
 
-Route::get('/admin/about', function () {
-    return view('admin.about');
-});
+Route::get('/admin/about', AboutController::class . '@about')->name('admin.about');
 
 Route::get('/admin/students', function () {
     $students = [
