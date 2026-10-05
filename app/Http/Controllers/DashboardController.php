@@ -10,7 +10,7 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard', [
             'title' => 'Dashboard',
-            'content' => 'Welcome to the Admin Dashboard Sigma',
+            'content' => 'Welcome to the Admin Dashboard',
         ]);
     }
 }

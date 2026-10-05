@@ -7,9 +7,17 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AllowDynamicProperties' => $vendorDir . '/symfony/polyfill-php82/Resources/stubs/AllowDynamicProperties.php',
+    'App\\Http\\Controllers\\AboutController' => $baseDir . '/app/Http/Controllers/AboutController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\DashboardController' => $baseDir . '/app/Http/Controllers/DashboardController.php',
+    'App\\Http\\Controllers\\StudentsController' => $baseDir . '/app/Http/Controllers/StudentsController.php',
+    'App\\Models\\Student' => $baseDir . '/app/Models/Student.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
+    'App\\View\\Components\\Admin\\Layout' => $baseDir . '/app/View/Components/Admin/Layout.php',
+    'App\\View\\Components\\Admin\\MenuItem' => $baseDir . '/app/View/Components/Admin/MenuItem.php',
+    'App\\View\\Components\\Admin\\Navbar' => $baseDir . '/app/View/Components/Admin/Navbar.php',
+    'App\\View\\Components\\Admin\\Sidebar' => $baseDir . '/app/View/Components/Admin/Sidebar.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',
     'Brick\\Math\\BigInteger' => $vendorDir . '/brick/math/src/BigInteger.php',

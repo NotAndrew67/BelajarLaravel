@@ -666,9 +666,17 @@ class ComposerStaticInitcda2add6397422fb1a2eb5b9207f1575
 
     public static $classMap = array (
         'AllowDynamicProperties' => __DIR__ . '/..' . '/symfony/polyfill-php82/Resources/stubs/AllowDynamicProperties.php',
+        'App\\Http\\Controllers\\AboutController' => __DIR__ . '/../..' . '/app/Http/Controllers/AboutController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/DashboardController.php',
+        'App\\Http\\Controllers\\StudentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudentsController.php',
+        'App\\Models\\Student' => __DIR__ . '/../..' . '/app/Models/Student.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\View\\Components\\Admin\\Layout' => __DIR__ . '/../..' . '/app/View/Components/Admin/Layout.php',
+        'App\\View\\Components\\Admin\\MenuItem' => __DIR__ . '/../..' . '/app/View/Components/Admin/MenuItem.php',
+        'App\\View\\Components\\Admin\\Navbar' => __DIR__ . '/../..' . '/app/View/Components/Admin/Navbar.php',
+        'App\\View\\Components\\Admin\\Sidebar' => __DIR__ . '/../..' . '/app/View/Components/Admin/Sidebar.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',

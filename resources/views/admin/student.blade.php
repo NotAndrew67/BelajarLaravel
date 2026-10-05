@@ -1,7 +1,7 @@
 <x-admin.layout>
     {{-- Header + tombol add --}}
     <div class="flex items-center justify-between mb-6">
-        <h1 class="text-2xl font-bold text-white">Students</h1>
+        <h1 class="text-2xl font-bold text-white">Student</h1>
         <a href="#"
            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700">
             + Add Student
@@ -21,7 +21,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($students as $student)
+                @foreach ($student as $student)
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <td class="px-6 py-4">{{ $loop->iteration }}</td>
                         <td class="px-6 py-4">{{ $student['nis'] }}</td>
