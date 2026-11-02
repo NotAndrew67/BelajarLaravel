@@ -1,5 +1,11 @@
 @php
-    $isActive = request()->is(ltrim($href, '/')); // true jika URL saat ini sama dengan href
+    $cleanHref = ltrim($href, '/');
+    $isActive = request()->is($cleanHref)
+        || request()->is($cleanHref . '/*')
+        || request()->is(rtrim($cleanHref, 's'))
+        || request()->is(rtrim($cleanHref, 's') . '/*')
+        || request()->is($cleanHref . 's')
+        || request()->is($cleanHref . 's/*');
 @endphp
 
 <li>
