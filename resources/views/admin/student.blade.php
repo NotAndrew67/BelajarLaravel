@@ -26,7 +26,7 @@
                         <td class="px-6 py-4">{{ $loop->iteration }}</td>
                         <td class="px-6 py-4">{{ $student['nis'] }}</td>
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $student['name'] }}</td>
-                        <td class="px-6 py-4">{{ $student['classroom'] }}</td>
+                        <td class="px-6 py-4">{{ $student->classroom->name}}</td>
                         <td class="px-6 py-4">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                             <a href="#" class="ml-3 font-medium text-red-600 dark:text-red-500 hover:underline">Delete</a>

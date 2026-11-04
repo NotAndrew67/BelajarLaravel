@@ -23,12 +23,20 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
         ]);
 
-        Student::factory(20)->create();
+        // Student::factory(20)->create();
 
-        Classroom::factory(20)->create();
+        // Classroom::factory(20)->create();
 
-        Subject::factory(10)->create();
+        Classroom::factory(10)
+            ->hasStudents(5)
+            ->create();
 
-        Teacher::factory(10)->create();
+        $subjects = Subject::factory(10)->create();
+
+        foreach ($subjects as $subject) {
+            Teacher::factory()->create([
+                'subject_id' => $subject->id,
+            ]);
+        }
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Subject;
 use App\Models\Teacher;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,18 +21,7 @@ class TeacherFactory extends Factory
         return [
             'name' => fake()->name(),
             'niy' => fake()->numberBetween(1000000000, 9999999999),
-            'subjects' => fake()->randomElement([
-                'Matematika',
-                'Bahasa Indonesia',
-                'Bahasa Inggris',
-                'Pemrograman Web',
-                'Basis Data',
-                'Pendidikan Agama Islam',
-                'Pendidikan Jasmani & Kesehatan',
-                'Sejarah Indonesia',
-                'Informatika',
-                'Projek Kreatif dan Kewirausahaan',
-            ]),
+            'subject_id' => Subject::factory(),
             'start_date' => fake()->date(),
         ];
     }

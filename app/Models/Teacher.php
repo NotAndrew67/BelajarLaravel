@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Teacher extends Model
 {
@@ -15,6 +16,7 @@ class Teacher extends Model
     protected $fillable = [
         'name',
         'niy',
+        'subject_id',
         'subjects',
         'start_date',
     ];
@@ -30,5 +32,10 @@ class Teacher extends Model
             'start_date' => 'date',
             'niy' => 'integer',
         ];
+    }
+
+    public function subject(): BelongsTo
+    {
+        return $this->belongsTo(Subject::class, 'subject_id');
     }
 }

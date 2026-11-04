@@ -27,7 +27,7 @@
                         <td class="px-6 py-4">{{ $loop->iteration }}</td>
                         <td class="px-6 py-4">{{ $item->niy }}</td>
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $item->name }}</td>
-                        <td class="px-6 py-4">{{ $item->subjects }}</td>
+                        <td class="px-6 py-4">{{ $item->subject->name ?? $item->subjects ?? '-' }}</td>
                         <td class="px-6 py-4">{{ is_string($item->start_date) ? $item->start_date : $item->start_date?->format('Y-m-d') }}</td>
                         <td class="px-6 py-4">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>

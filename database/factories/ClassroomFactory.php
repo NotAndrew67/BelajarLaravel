@@ -17,9 +17,17 @@ class ClassroomFactory extends Factory
      */
     public function definition(): array
     {
+        $grade = fake()->randomElement(['X', 'XI']);
+        $majorData = fake()->randomElement([
+            ['code' => 'PPLG', 'major' => 'Pengembangan Perangkat Lunak dan Gim'],
+            ['code' => 'DKV', 'major' => 'Desain Komunikasi Visual'],
+            ['code' => 'Animasi', 'major' => 'Animasi'],
+        ]);
+        $number = fake()->numberBetween(1, 2);
+
         return [
-            'name' => fake()->name(),
-            'major' => fake()->randomElement(['IPA', 'IPS']),
+            'name' => "{$grade} {$majorData['code']} {$number}",
+            'major' => $majorData['major'],
         ];
     }
 }

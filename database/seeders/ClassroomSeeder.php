@@ -10,16 +10,18 @@ class ClassroomSeeder extends Seeder
     public function run(): void
     {
         $classrooms = [
-            ['name' => 'X RPL 1',   'major' => 'Rekayasa Perangkat Lunak'],
-            ['name' => 'X RPL 2',   'major' => 'Rekayasa Perangkat Lunak'],
-            ['name' => 'XI RPL 1',  'major' => 'Rekayasa Perangkat Lunak'],
-            ['name' => 'XI RPL 2',  'major' => 'Rekayasa Perangkat Lunak'],
-            ['name' => 'XII RPL 1', 'major' => 'Rekayasa Perangkat Lunak'],
-            ['name' => 'X TKJ 1',   'major' => 'Teknik Komputer & Jaringan'],
-            ['name' => 'X TKJ 2',   'major' => 'Teknik Komputer & Jaringan'],
-            ['name' => 'XI TKJ 1',  'major' => 'Teknik Komputer & Jaringan'],
-            ['name' => 'XII TKJ 1', 'major' => 'Teknik Komputer & Jaringan'],
-            ['name' => 'X DKV 1',   'major' => 'Desain Komunikasi Visual'],
+            ['name' => 'X PPLG 1',    'major' => 'Pengembangan Perangkat Lunak dan Gim'],
+            ['name' => 'X PPLG 2',    'major' => 'Pengembangan Perangkat Lunak dan Gim'],
+            ['name' => 'XI PPLG 1',   'major' => 'Pengembangan Perangkat Lunak dan Gim'],
+            ['name' => 'XI PPLG 2',   'major' => 'Pengembangan Perangkat Lunak dan Gim'],
+            ['name' => 'X DKV 1',     'major' => 'Desain Komunikasi Visual'],
+            ['name' => 'X DKV 2',     'major' => 'Desain Komunikasi Visual'],
+            ['name' => 'XI DKV 1',    'major' => 'Desain Komunikasi Visual'],
+            ['name' => 'XI DKV 2',    'major' => 'Desain Komunikasi Visual'],
+            ['name' => 'X Animasi 1', 'major' => 'Animasi'],
+            ['name' => 'X Animasi 2', 'major' => 'Animasi'],
+            ['name' => 'XI Animasi 1','major' => 'Animasi'],
+            ['name' => 'XI Animasi 2','major' => 'Animasi'],
         ];
 
         foreach ($classrooms as $data) {

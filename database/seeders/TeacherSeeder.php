@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Subject;
 use App\Models\Teacher;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -13,6 +14,16 @@ class TeacherSeeder extends Seeder
      */
     public function run(): void
     {
-        Teacher::factory(10)->create();
+        $subjects = Subject::all();
+        if ($subjects->isEmpty()) {
+            $subjects = Subject::factory(10)->create();
+        }
+
+        foreach ($subjects as $subject) {
+            Teacher::firstOrCreate(
+                ['subject_id' => $subject->id],
+                Teacher::factory()->raw(['subject_id' => $subject->id])
+            );
+        }
     }
 }

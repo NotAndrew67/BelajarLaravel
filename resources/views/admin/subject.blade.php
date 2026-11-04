@@ -15,6 +15,7 @@
                 <tr>
                     <th class="px-6 py-3">No</th>
                     <th class="px-6 py-3">Name</th>
+                    <th class="px-6 py-3">Teacher</th>
                     <th class="px-6 py-3">Action</th>
                 </tr>
             </thead>
@@ -23,6 +24,7 @@
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <td class="px-6 py-4">{{ $loop->iteration }}</td>
                         <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">{{ $item->name }}</td>
+                        <td class="px-6 py-4">{{ $item->teacher->name ?? '-' }}</td>
                         <td class="px-6 py-4">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                             <a href="#" class="ml-3 font-medium text-red-600 dark:text-red-500 hover:underline">Delete</a>
@@ -30,7 +32,7 @@
                     </tr>
                 @empty
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <td colspan="3" class="px-6 py-4 text-center text-gray-500 dark:text-gray-400">No data available</td>
+                        <td colspan="4" class="px-6 py-4 text-center text-gray-500 dark:text-gray-400">No data available</td>
                     </tr>
                 @endforelse
             </tbody>
