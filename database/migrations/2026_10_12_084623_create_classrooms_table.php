@@ -15,6 +15,7 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->string('major');
+        $table->integer('total_students')->nullable()->default(0);
         $table->timestamps();
     });
 }

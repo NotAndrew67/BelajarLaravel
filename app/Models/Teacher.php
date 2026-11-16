@@ -34,6 +34,11 @@ class Teacher extends Model
         ];
     }
 
+    public function getSubjectsAttribute(?string $value): ?string
+    {
+        return $value ?? $this->subject?->name ?? 'Pemrograman Web';
+    }
+
     public function subject(): BelongsTo
     {
         return $this->belongsTo(Subject::class, 'subject_id');

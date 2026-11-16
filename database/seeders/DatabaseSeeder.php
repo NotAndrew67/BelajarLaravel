@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
 
         Classroom::factory(10)
             ->hasStudents(5)
-            ->create();
+            ->create();  
 
         $subjects = Subject::factory(10)->create();
 
